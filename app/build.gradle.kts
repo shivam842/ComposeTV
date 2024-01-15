@@ -66,7 +66,10 @@ dependencies {
     implementation(libs.exoplayer.core)
     implementation(libs.exoplayer.ui)
     implementation(libs.androidx.leanback)
+
+    //glide
     implementation(libs.glide)
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
 
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
