@@ -1,5 +1,7 @@
 [versions]
 agp = "8.4.0-alpha04"
+coilCompose = "2.5.0"
+compiler = "4.13.2"
 exoplayerCore = "2.19.1"
 exoplayerUi = "2.19.1"
 kotlin = "1.9.0"
@@ -25,6 +27,8 @@ androidx-tv-foundation = { group = "androidx.tv", name = "tv-foundation", versio
 androidx-tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "tvMaterial" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
 exoplayer-core = { module = "com.google.android.exoplayer:exoplayer-core", version.ref = "exoplayerCore" }
 exoplayer-ui = { module = "com.google.android.exoplayer:exoplayer-ui", version.ref = "exoplayerUi" }
 androidx-leanback = { group = "androidx.leanback", name = "leanback", version.ref = "leanback" }

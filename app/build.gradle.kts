@@ -69,7 +69,8 @@ dependencies {
 
     //glide
     implementation(libs.glide)
-    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    annotationProcessor(libs.compiler)
+    implementation(libs.coil.compose)
 
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
