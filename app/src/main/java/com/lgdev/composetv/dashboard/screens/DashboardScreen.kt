@@ -36,7 +36,7 @@ fun BannerView(modifier: Modifier = Modifier) {
     val items = remember { mutableIntStateOf(1) }
 
     //banner view
-    Carousel(items.value)
+    Carousel("", items.value)
 }
 
 @Composable
