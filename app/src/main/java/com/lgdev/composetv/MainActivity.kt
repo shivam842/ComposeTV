@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@OptIn(ExperimentalTvMaterial3Api::class)
+
 @Composable
 fun MovieDashboard(modifier: Modifier = Modifier) {
     DashboardScreen()
