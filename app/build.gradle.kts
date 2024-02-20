@@ -71,6 +71,8 @@ dependencies {
     implementation(libs.glide)
     annotationProcessor(libs.compiler)
 
+    implementation(libs.coil.compose)
+
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
