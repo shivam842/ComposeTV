@@ -1,20 +1,28 @@
 [versions]
-agp = "8.4.0-alpha04"
+agp = "8.2.2"
+compiler = "4.16.0"
 exoplayerCore = "2.19.1"
 exoplayerUi = "2.19.1"
-kotlin = "1.9.0"
+kotlin = "1.9.22"
 coreKtx = "1.12.0"
 appcompat = "1.6.1"
-composeBom = "2023.10.01"
+composeBom = "2024.02.00"
 tvFoundation = "1.0.0-alpha10"
 tvMaterial = "1.0.0-alpha10"
 lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
 leanback = "1.0.0"
-glide = "4.11.0"
+glide = "4.16.0"
+coil-compose = "2.5.0"
+hilt-navigation-compose = "1.1.0"
+kotlinx-serialization = "1.6.2"
+core-splashscreen = "1.0.1"
+ksp = "1.9.20-1.0.14"
+hilt-android = "2.50"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "core-splashscreen" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
@@ -23,14 +31,28 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-tv-foundation = { group = "androidx.tv", name = "tv-foundation", version.ref = "tvFoundation" }
 androidx-tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "tvMaterial" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
 exoplayer-core = { module = "com.google.android.exoplayer:exoplayer-core", version.ref = "exoplayerCore" }
 exoplayer-ui = { module = "com.google.android.exoplayer:exoplayer-ui", version.ref = "exoplayerUi" }
 androidx-leanback = { group = "androidx.leanback", name = "leanback", version.ref = "leanback" }
+
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose" }
+
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt-android" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt-android" }
+
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt-android" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
